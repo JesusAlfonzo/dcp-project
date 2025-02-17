@@ -1,15 +1,18 @@
 <?php
 
 use App\Http\Controllers\categoriaController;
+use App\Http\Controllers\ProductoController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
+Route::get('/', function () { 
     return view('template');
 });
 
 Route::view('/panel', 'panel.index')-> name('panel');
 
-Route::resource('categorias', categoriaController::class);
+Route::resource('categorias', categoriaController::class,);
+Route::resource('producto', ProductoController::class,);
+
 
 Route::get('/login', function () {
     return view('auth.login');

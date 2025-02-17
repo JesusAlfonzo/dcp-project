@@ -55,9 +55,9 @@
                     <div class="sb-nav-link-icon"><i class="fa-solid fa-tag"></i></div>
                     Categorías
                 </a>
-                <a class="nav-link" href="tables.html">
+                <a class="nav-link" href="{{route('producto.index')}}">
                     <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
-                    Tables
+                    Productos
                 </a>
             </div>
         </div>

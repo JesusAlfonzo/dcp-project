@@ -29,4 +29,14 @@ class Producto extends Model
     public function presentacione() {
         return $this->belongsTo(Presentacione::class);
     }
+
+    // protected $fillable =['codigo', 'nombre', 'descripcion','marca_id', 'presentacione_id', 'fecha_vencimiento', 'img_path'];
+
+    // public function handleUploadeImage($image) {
+    //     $file = $image;
+    //     $name = time() . $file->getClientOriginalName();
+    //     $file->move(public_path() . '/img/productos/', $name);
+
+    //     return $name;
+    //     }
 }
